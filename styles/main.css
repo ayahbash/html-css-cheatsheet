@@ -40,6 +40,7 @@
     font-size: clamp(1.8rem, 5vw, 2.5rem);
     font-weight: 1500;
     line-height: 1.2;
+    color: white;
   }
   
   /* section headings */
