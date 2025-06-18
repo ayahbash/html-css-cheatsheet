@@ -7,8 +7,6 @@ simple cheat sheet website built with HTML and CSS, with a cute pink & purple th
 check it out here:  
 [https://ayahbash.github.io/html-css-cheatsheet/](https://ayahbash.github.io/html-css-cheatsheet/)
 
-
 ---
-
-this is just the first draft.  
+this is just a first draft
 i will be updating the content and layout (flexbox) in future versions!
