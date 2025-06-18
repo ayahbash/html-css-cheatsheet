@@ -1,93 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>html & css cheat sheet</title>
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="icon" type="image/png" href="assets/flower.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html & css cheat sheet</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="icon" type="image/png" href="assets/flower.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <img src="assets/html.png" height="70px" id="html">
-        <img src="assets/css.png" height="70px" id="css">
-        <h1 id="titre"> html & css cheat sheet ᡣ𐭩</h1>
-        <br>
-        <hr>
+      <div class="logos">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="assets/html.png" class="logo" id="html" /></a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="assets/css.png" class="logo" id="css" /></a>
+        <h1 id="maint">html & css cheat sheet ᡣ𐭩</h1>
+      </div>
     </header>
+    <br>
+
+    <h2>✦ html</h2>
+    <hr />
     <main>
-        <br>
-        <div id="block">
-            <h2 id="titles">
-                html basics
-            </h2>
+      <div class="block">
+        <h3 class="titles">html basics</h3>
         <pre>
-<span class="code">&lt;!DOCTYPE html&gt;</span> — tells the browser this is an HTML5 document  
-<span class="code">&lt;html&gt;</span> — root of the page  
-<span class="code">&lt;head&gt;</span> — metadata, links, title, etc.  
-<span class="code">&lt;title&gt;</span> — title shown in the browser tab  
-<span class="code">&lt;body&gt;</span> — main content of the page 
-        </pre>          
-        </div>
-        <div id="block">
-            <h2 id="titles">text elements</h2>
-            <pre>
-<span class="code">&lt;h1&gt; to &lt;h6&gt;</span> — headings from most to least important  
+<span class="code">&lt;!DOCTYPE html&gt;</span> — html5 doctype  
+<span class="code">&lt;html&gt;</span> — root element  
+<span class="code">&lt;head&gt;</span> — metadata container  
+<span class="code">&lt;title&gt;</span> — browser tab title  
+<span class="code">&lt;body&gt;</span> — visible content</pre>
+      </div>
+
+      <div class="block">
+        <h3 class="titles">structure & layout</h3>
+        <pre>
+<span class="code">&lt;div&gt;</span> — generic block  
+<span class="code">&lt;span&gt;</span> — inline container  
+<span class="code">&lt;header&gt;</span> — top of page  
+<span class="code">&lt;main&gt;</span> — main content  
+<span class="code">&lt;section&gt;</span> — content section  
+<span class="code">&lt;article&gt;</span> — standalone block  
+<span class="code">&lt;footer&gt;</span> — bottom of page  
+<span class="code">&lt;nav&gt;</span> — navigation bar</pre>
+      </div>
+
+      <div class="block">
+        <h3 class="titles">text & formatting</h3>
+        <pre>
+<span class="code">&lt;h1&gt; to &lt;h6&gt;</span> — headings  
 <span class="code">&lt;p&gt;</span> — paragraph  
 <span class="code">&lt;br&gt;</span> — line break  
-<span class="code">&lt;strong&gt;</span> — bold text (semantic)  
-<span class="code">&lt;em&gt;</span> — italic text (semantic)  
-<span class="code">&lt;b&gt;</span> — bold (non-semantic)  
-<span class="code">&lt;i&gt;</span> — italic (non-semantic)
-            </pre>
-          </div>
-          
-          <div id="block">
-            <h2 id="titles">structure elements</h2>
-            <pre>
-<span class="code">&lt;div&gt;</span> — generic block container  
-<span class="code">&lt;span&gt;</span> — generic inline container  
-<span class="code">&lt;section&gt;</span> — standalone section  
-<span class="code">&lt;article&gt;</span> — self-contained content  
-<span class="code">&lt;main&gt;</span> — main content of the page  
-<span class="code">&lt;header&gt;</span> — top of a section/page  
-<span class="code">&lt;footer&gt;</span> — bottom of a section/page  
-<span class="code">&lt;nav&gt;</span> — navigation links
-            </pre>
-          </div>
+<span class="code">&lt;strong&gt;</span> — bold (semantic)  
+<span class="code">&lt;em&gt;</span> — italic (semantic)  
+<span class="code">&lt;b&gt;</span> — bold  
+<span class="code">&lt;i&gt;</span> — italic</pre>
+      </div>
 
-          <div id="block">
-            <h2 id="titles">links & images</h2>
-            <pre>
-<span class="code">&lt;a href="url"&gt;</span> — hyperlink  
-<span class="code">target="_blank"</span> — open in new tab  
-<span class="code">&lt;img src="path" alt="desc"&gt;</span> — image tag  
-<span class="code">width="" height=""</span> — control image size  
-<span class="code">alt</span> — alternative text (for screen readers and if image fails)
-            </pre>
-          </div>
-          
+      <div class="block">
+        <h3 class="titles">media & links</h3>
+        <pre>
+<span class="code">&lt;a href="..."&gt;</span> — link  
+<span class="code">target="_blank"</span> — new tab  
+<span class="code">&lt;img src="..."&gt;</span> — image  
+<span class="code">alt</span> — image description  
+<span class="code">width / height</span> — image size</pre>
+      </div>
 
+      <div class="block">
+        <h3 class="titles">forms & inputs</h3>
+        <pre>
+<span class="code">&lt;form&gt;</span> — form container  
+<span class="code">&lt;input type="text"&gt;</span> — text field  
+<span class="code">&lt;input type="email"&gt;</span> — email field  
+<span class="code">&lt;input type="password"&gt;</span> — password  
+<span class="code">&lt;textarea&gt;</span> — multi-line input  
+<span class="code">&lt;label&gt;</span> — input label  
+<span class="code">&lt;button&gt;</span> — submit button  
+<span class="code">required</span> — must fill  
+<span class="code">placeholder</span> — hint text</pre>
+      </div>
 
+      <div class="block">
+        <h3 class="titles">lists & tables</h3>
+        <pre>
+<span class="code">&lt;ul&gt;</span> — unordered list  
+<span class="code">&lt;ol&gt;</span> — ordered list  
+<span class="code">&lt;li&gt;</span> — list item  
+<span class="code">&lt;table&gt;</span> — table  
+<span class="code">&lt;thead&gt;</span> — table head  
+<span class="code">&lt;tbody&gt;</span> — table body  
+<span class="code">&lt;tr&gt;</span> — row  
+<span class="code">&lt;th&gt;</span> — header cell  
+<span class="code">&lt;td&gt;</span> — data cell  
+<span class="code">colspan / rowspan</span> — merge cells</pre>
+      </div>
 
-
-
-
-
+      <div class="block">
+        <h3 class="titles">meta & scripts</h3>
+        <pre>
+<span class="code">&lt;meta charset="UTF-8"&gt;</span> — encoding  
+<span class="code">&lt;meta name="viewport"&gt;</span> — scaling  
+<span class="code">&lt;meta name="description"&gt;</span> — summary  
+<span class="code">&lt;link rel="stylesheet"&gt;</span> — link css  
+<span class="code">&lt;script&gt;</span> — javascript  
+<span class="code">&lt;base href="..."&gt;</span> — base url</pre>
+      </div>
     </main>
-<footer>
-<hr>
-<br>
-made with ‪‪❤︎‬ - Aya 
-<br>
-&copy; All Rights Reserved - 2025
-</footer>
-</body>
+
+    <h2>✦ css</h2>
+    <hr />
+    <main>
+      <div class="block">
+        <h3 class="titles">selectors & basics</h3>
+        <pre>
+<span class="code">selector { property: value; }</span>  
+<span class="code">.class</span> — targets class  
+<span class="code">#id</span> — targets id  
+<span class="code">*</span> — universal selector  
+<span class="code">/* comment */</span> — note</pre>
+      </div>
+
+      <div class="block">
+        <h3 class="titles">text & font</h3>
+        <pre>
+<span class="code">color</span> — text color  
+<span class="code">font-family</span> — typeface  
+<span class="code">font-size</span> — size  
+<span class="code">font-weight</span> — thickness  
+<span class="code">text-align</span> — alignment  
+<span class="code">line-height</span> — line spacing  
+<span class="code">text-transform</span> — uppercase/lowercase</pre>
+      </div>
+
+      <div class="block">
+        <h3 class="titles">box model</h3>
+        <pre>
+<span class="code">margin</span> — space outside  
+<span class="code">padding</span> — space inside  
+<span class="code">border</span> — border  
+<span class="code">width / height</span> — size  
+<span class="code">box-sizing: border-box</span> — includes padding/border</pre>
+      </div>
+
+      <div class="block">
+        <h3 class="titles">layout: flexbox</h3>
+        <pre>
+<span class="code">display: flex</span> — start flexbox  
+<span class="code">flex-direction</span> — row / column  
+<span class="code">justify-content</span> — x-axis alignment  
+<span class="code">align-items</span> — y-axis alignment  
+<span class="code">flex-wrap</span> — wrap items  
+<span class="code">gap</span> — space between items</pre>
+      </div>
+
+      <div class="block">
+        <h3 class="titles">layout: grid</h3>
+        <pre>
+<span class="code">display: grid</span> — start grid  
+<span class="code">grid-template-columns</span> — columns  
+<span class="code">grid-template-rows</span> — rows  
+<span class="code">grid-column</span> — span columns  
+<span class="code">grid-row</span> — span rows  
+<span class="code">gap</span> — spacing</pre>
+      </div>
+
+      <div class="block">
+        <h3 class="titles">colors & backgrounds</h3>
+        <pre>
+<span class="code">color / background-color</span> — text / fill  
+<span class="code">#hex</span> — hex value  
+<span class="code">rgb(255, 0, 0)</span> — red  
+<span class="code">rgba(0, 0, 0, 0.5)</span> — transparent black  
+<span class="code">background-image</span> — image fill  
+<span class="code">background-size</span> — cover / contain  
+<span class="code">opacity</span> — transparency</pre>
+      </div>
+
+      <div class="block">
+        <h3 class="titles">effects & animation</h3>
+        <pre>
+<span class="code">border-radius</span> — rounded corners  
+<span class="code">box-shadow</span> — shadow  
+<span class="code">transition</span> — smooth change  
+<span class="code">:hover</span> — hover effect  
+<span class="code">transform: scale()</span> — grow/shrink  
+<span class="code">z-index</span> — stack order</pre>
+      </div>
+
+      <div class="block">
+        <h3 class="titles">units & values</h3>
+        <pre>
+<span class="code">px</span> — fixed size  
+<span class="code">%</span> — relative to parent  
+<span class="code">em</span> — relative to parent font  
+<span class="code">rem</span> — relative to root font  
+<span class="code">vh / vw</span> — viewport height/width  
+<span class="code">auto</span> — automatic size  
+<span class="code">calc()</span> — calculated value</pre>
+      </div>
+
+      <div class="block">
+        <h3 class="titles">media queries</h3>
+        <pre>
+<span class="code">@media (max-width: 768px)</span> — small screens  
+<span class="code">@media (min-width: 1024px)</span> — large screens</pre>
+      </div>
+    </main>
+
+    <footer>
+      <hr />
+      made with ❤︎ - Aya <br />
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML Reference</a> |
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS Reference</a> <br />
+      &copy; All Rights Reserved - 2025
+    </footer>
+  </body>
 </html>
